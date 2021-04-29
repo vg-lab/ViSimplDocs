@@ -35,6 +35,96 @@ ViSimpl is composed of two applications: SimPart for 3D visualization (spatial d
 Installation and running
 ------------------------
 
-.. note::
-   Work in progress.
+ViSimpl can be downloaded from the `ViSimpl Homepage`_ for Linux and Mac operating systems and executed locally. Additionally it can be executed using a docker image. 
+
+^^^^^^^^^^^^^^^^^
+Executing locally
+^^^^^^^^^^^^^^^^^
+
+The SimPart and StackViz application options and parameters are:
+
+.. tabularcolumns:: |p{3.5cm}|p{3.5cm}|p{8.0cm}|
+
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| **OPTION**             | **PARAMETER**                   | **DESCRIPTION**                                                                          |
++========================+=================================+==========================================================================================+
+| ``--version``          | *none*                          | Shows the version of the application.                                                    |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``--help``             | *none*                          | Shows the options and arguments used                                                     |
+|                        |                                 | for executing the application.                                                           |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``--testFile``         | *destination_path*              | Generates a test file dataset and saves it in the specified destination path. If the     |
+|                        |                                 | destination path is not specified the test files will be saved in the same directory     |
+|                        |                                 | as the application executable (if possible).                                             |
+|                        |                                 | **Only available in SimPart**                                                            |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-bc``                | *path_to_bc_file*               | Load BlueConfig file.                                                                    |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-target``            | *target_label*                  | Specifies target label of the BlueConfig file.                                           |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-csv``               | *path_to_network_file*          | Load CSV dataset files. Both the network and the activity files must be present.         |
+|                        |                                 |                                                                                          |
+|                        | *path_to_activity_file*         |                                                                                          |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-rest``              | *url* *port*                    | Load data from the given url and port using NEST Rest API.                               |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-se``                | *path_to_events_file*           | Load events file.                                                                        |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-scale``             | *X,Y,Z*                         | Sets the 3D view scale in X,Y and Z axis.                                                |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-zeq``               | *zeroeq_id*                     | Opens a ZeroEQ channel with the specified id.                                            |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-ws``                | *width* *height*                | Specifies the size of the application window.                                            |
+|                        |                                 |                                                                                          |
+| ``--window-size``      |                                 |                                                                                          |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-fs``                | *none*                          | Sets the application window to fullscreen mode.                                          |
+|                        |                                 |                                                                                          |
+| ``--fullscreen``       |                                 |                                                                                          |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+| ``-mw``                | *none*                          | Maximizes the application window to the desktop resolution.                              |
+|                        |                                 |                                                                                          |
+| ``--maximize-window``  |                                 |                                                                                          |
++------------------------+---------------------------------+------------------------------------------------------------------------------------------+
+
+If the options are incompatible or its parameters invalid the application will abort the execution and will show the help message in the console.
+
+^^^^^^^^^^^^
+Test dataset
+^^^^^^^^^^^^
+
+A test data for SimPart and StackViz can be generated by executing:
+
+.. code-block:: bash
+
+   ./visimpl --testFile
+
+SimPart will start loading the test data automatically. If the application can't write the test files it will abort the execution and inform of the error, in that case a path must be specified where the user has permissions to write. 
+
+.. code-block:: bash
+
+   ./visimpl --testFile destination_path
+
+^^^^^^^^^^^^^^
+Docker example
+^^^^^^^^^^^^^^
+
+Executing **SimPart**:
+
+.. code-block:: bash
+  :linenos:
+  :emphasize-lines: 10
+
+  xhost +local:docker
+  # Pull the image (do not use tag to download the latest image).
+  docker pull vglab/visimpl
+  # Download example data
+  mkdir data
+  cd data
+  # Download a test dataset or move test files to data directory.
+  cd ..
+  # Run example
+  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl /usr/bin/visimpl.sh
+
+To execute **StackViz**, follow the same steps but use **/usr/bin/stackviz.sh** in the docker call.
 
