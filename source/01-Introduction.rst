@@ -116,8 +116,8 @@ Executing **SimPart**:
   :emphasize-lines: 10
 
   xhost +local:docker
-  # Pull the image (do not use tag to download the latest image).
-  docker pull vglab/visimpl
+  # Pull the image.
+  docker pull vglab/visimpl:1.1.3-nvidia-ubuntu-16.04
   # Download example data
   mkdir data
   cd data
