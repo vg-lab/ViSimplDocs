@@ -117,7 +117,7 @@ Executing **SimPart**:
 
   xhost +local:docker
   # Pull the image.
-  docker pull vglab/visimpl:1.1.3-nvidia-ubuntu-16.04
+  docker pull vglab/visimpl:1.1.4-nvidia-ubuntu-16.04
   # Download example data
   mkdir data
   cd data
