@@ -38,6 +38,14 @@ Installation and running
 ViSimpl can be downloaded from the `ViSimpl Homepage`_ for Linux and Mac operating systems and executed locally. Additionally it can be executed using a docker image. 
 
 ^^^^^^^^^^^^^^^^^
+Docker containers
+^^^^^^^^^^^^^^^^^
+
+The docker containers for **ViSimpl** can be found on `Docker Hub`_. It's recommended to use the highest tag number (latest official release) or the **git master** (represents the latest commit to master branch, and usually are the same as the highest tag number).
+
+.. _Docker Hub: https://hub.docker.com/r/vglab/visimpl/tags?page=1&ordering=last_updated
+
+^^^^^^^^^^^^^^^^^
 Executing locally
 ^^^^^^^^^^^^^^^^^
 
@@ -124,7 +132,7 @@ Executing **SimPart**:
   # Download a test dataset or move test files to data directory.
   cd ..
   # Run example
-  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl /usr/bin/visimpl.sh
+  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl:1.1.4-nvidia-ubuntu-16.04 /usr/bin/visimpl.sh
 
 To execute **StackViz**, follow the same steps but use **/usr/bin/stackviz.sh** in the docker call.
 
