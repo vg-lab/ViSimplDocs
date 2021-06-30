@@ -117,7 +117,7 @@ SimPart will start loading the test data automatically. If the application can't
 Docker example
 ^^^^^^^^^^^^^^
 
-Executing **SimPart**:
+Executing both applications from docker:
 
 .. code-block:: bash
   :linenos:
@@ -125,14 +125,14 @@ Executing **SimPart**:
 
   xhost +local:docker
   # Pull the image.
-  docker pull vglab/visimpl:1.1.4-nvidia-ubuntu-16.04
+  docker pull vglab/visimpl:1.1.5-nvidia-ubuntu-16.04
   # Download example data
   mkdir data
   cd data
   # Download a test dataset or move test files to data directory.
   cd ..
   # Run example
-  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl:1.1.4-nvidia-ubuntu-16.04 /usr/bin/visimpl.sh
+  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl:1.1.5-nvidia-ubuntu-16.04 /usr/bin/visimpl.sh
 
-To execute **StackViz**, follow the same steps but use **/usr/bin/stackviz.sh** in the docker call.
+To execute **SimPart** only the user must use the **/usr/bin/simpart.sh** call, and to execute **StackViz** follow the same steps but use **/usr/bin/stackviz.sh** in the docker call. All scripts supports the parameters specified in the previous table with the exception of **--testFile** parameter as is only available in SimPart.
 
