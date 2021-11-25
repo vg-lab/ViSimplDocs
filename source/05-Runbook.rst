@@ -162,7 +162,7 @@ The groups widget (:numref:`fig9`) should show the selected group. Alternating b
 .. figure:: images/RBimage011.png
    :alt: Group list tab. 
    :align: center
-   :width: 391
+   :width: 395
    :scale: 100%
 
    Group list tab.
@@ -174,7 +174,7 @@ Repeat the selection process this time selecting the ids from 0 to 2499, that wi
 .. figure:: images/RBimage012.png
    :alt: Selected groups visualization.
    :align: center
-   :width: 1296
+   :width: 1300
    :scale: 40%
 
    Selected groups visualization.
@@ -223,7 +223,7 @@ Changing from the '**Selection**' tab to the '**Groups**' tab should show now a 
 .. figure:: images/RBimage015.png
    :alt: Group selected by clipping planes operation. 
    :align: center
-   :width: 1296
+   :width: 1300
    :scale: 40%
 
    Group selected by clipping planes operation.

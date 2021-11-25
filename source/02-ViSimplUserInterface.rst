@@ -141,10 +141,6 @@ Selection management
 
 In the "Selection" tab it can be found a button [...] to open the selection management widget (:numref:`figE`). This widget allows to choose which elements are included as part of the selection as well as saving the current selection in a text (.txt) file.
 
-Elements can be added or removed from the selection list by clicking on the buttons indicating the respective direction (<-- and -->). Both lists accept advanced selection mode i.e. managing selection through Ctrl and Shift keys for range and addition/subtraction selecting. Once the selection has the desired elements it can be saved to a file on the "Export" tab and use it as the current selection by clicking on "Accept".  
-
-When creating a selection the application will ask for a group name. The name can be later edited, if needed, in the selection groups tab by clicking in the group name. The created selection will appear with the name and size in the selection tab with a default color. There, clicking in the associated gradient widget, the selection color can be modified the same way as before with the transfer function edition dialog (:numref:`fig16`).
-
 .. _figE:
 
 .. figure:: images/VSImage006.png
@@ -154,6 +150,18 @@ When creating a selection the application will ask for a group name. The name ca
    :scale: 55%
 
    Selection management dialog.
+
+Elements can be added or removed from the selection list by clicking on the buttons indicating the respective direction (<-- and -->). Both lists accept advanced selection mode i.e. managing selection through Ctrl and Shift keys for range and addition/subtraction selecting. Once the selection has the desired elements it can be saved to a file on the "Export" tab and use it as the current selection by clicking on "Accept".  
+
+When creating a selection the application will ask for a group name. The name can be later edited, if needed, in the selection groups tab by clicking in the group name. The created selection will appear with the name and size in the selection tab with a default color. There, clicking in the associated gradient widget, the selection color can be modified the same way as before with the transfer function edition dialog (:numref:`figF1`).
+
+.. _figF1:
+
+.. figure:: images/VSImage013.png
+   :alt: Selection groups list with default assigned colors for each of the three selected groups.
+   :align: center
+
+   Selection groups list with default assigned colors for each of the three selected groups.
    
 In the "Export" tab there are several widgets to customize the file exporting of the current selection (:numref:`figF`). The user can set a prefix and suffix for the exported GIDs in the respective text boxes as well as establishing the separator between them. For custom separator check the "Other" option, using the one provided in the text box. The path where the file will be stored can be directly written or browsed. For saving the selection to file click on the "Save" button. 
 
@@ -166,14 +174,6 @@ In the "Export" tab there are several widgets to customize the file exporting of
    :scale: 55%
 
    Selection export dialog.
-
-.. _fig16:
-
-.. figure:: images/VSImage013.png
-   :alt: Selection groups list with default assigned colors for each of the three selected groups.
-   :align: center
-
-   Selection groups list with default assigned colors for each of the three selected groups.
 
 ------------------
 Keys and shortcuts
