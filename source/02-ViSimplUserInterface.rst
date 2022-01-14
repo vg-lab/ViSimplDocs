@@ -1,9 +1,9 @@
 ======================
-ViSimpl User Interface
+SimPart User Interface
 ======================
 
 ---------------------------
-ViSimpl Application Toolbar
+SimPart Application Toolbar
 ---------------------------
 
 The application bar presents several icons to perform actions such as opening datasets, showing or hiding panels and configuring the colors of the visualization (:numref:`figA`). 
@@ -160,6 +160,8 @@ When creating a selection the application will ask for a group name. The name ca
 .. figure:: images/VSImage013.png
    :alt: Selection groups list with default assigned colors for each of the three selected groups.
    :align: center
+   :width: 1850
+   :scale: 35%
 
    Selection groups list with default assigned colors for each of the three selected groups.
    
@@ -174,6 +176,19 @@ In the "Export" tab there are several widgets to customize the file exporting of
    :scale: 55%
 
    Selection export dialog.
+
+
+Groups can be saved to disk with its properties (gids, active status and color transfer functions) using the **"Save"** button located in the **Groups** tab. Groups can be loaded from disk using the **"Load"** button (:numref:`figF2`).
+
+.. _figF2:
+
+.. figure:: images/VSImage014.png
+   :alt: Groups saving and loading.
+   :align: center
+   :width: 400
+   :scale: 55%
+
+   Groups saving and loading buttons.
 
 ------------------
 Keys and shortcuts

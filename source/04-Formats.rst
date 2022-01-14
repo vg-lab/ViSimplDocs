@@ -1,10 +1,10 @@
 ===============================
-ViSimpl & StackViz File Formats
+SimPart & StackViz File Formats
 ===============================
 
-This section specifies in detail the open formats used by ViSimpl and StackViz to read and store data, for information about how BlueConfig and HDF5 file formats store networks (called circuits) and activity data refer to the specifications of those formats.
+This section specifies in detail the open formats used by ViSimpl to read and store data, for information about how BlueConfig and HDF5 file formats store networks (called circuits) and activity data refer to the specifications of those formats.
 
-Both ViSimpl and StackViz work with a network definition with positions in space and spike activation information. The network file specifies the 3D positions of the elements of the network and the activity file specifies the moment in time the each element has a spike ocurrence. 
+Both SimPart and StackViz work with a network definition with positions in space and spike activation information. The network file specifies the 3D positions of the elements of the network and the activity file specifies the moment in time the each element has a spike ocurrence. 
 
 ----------------
 CSV Network File
@@ -78,6 +78,52 @@ The timeframes values consists on a subset name (considered also the event name)
 
     If the **Time_start** is absent the timeframe is implied to start from 0, so ":0.25" will be interpreted as "0:0.25".
 
+----------------
+JSON Groups file
+----------------
 
-  
+The JSON groups file is the file that contains the groups and its properties and its generated using the **"Save"** button in the Groups tab in SimPart. The groups file can be loaded into SimPart using the **"Load"** button in the same tab.
+
+The JSON groups file contains a json object with following fields: 
+ - **date**: text value with the date of the selection.
+ - **filename**: text value with the file name on disk of the network file of the selection.
+ - **groups**: list of group definition json objects.
+
+Each object in the "groups" defines a group and its properties. It has the following fields:
+ - **active**: boolean indicating if the groups is active or not.
+ - **function**: text containing the values that define the color transfer function. Pairs are separated by character ";" and values in the pair are separated by comma ",". The first value in the pair is a point in [0,1] and the second value of the pair is the ARGB color in that point.
+ - **name**: text containing the name of the group.
+ - **sizes**: text containing the values that define the sizes of the group. Pairs are separated by ";" and values in the pair are separated by comma ",". The first value of the pair is a point in [0,1] and the second value is the size in that point.
+ - **gids**: text containig the ids of the elements in the groups. The ids can be expressed as ranges in the format **"lower_id:upper_id"** or just with the id number. The ids are joined by commas. 
+
+.. code-block:: json
+   :caption: JSON format of the groups file (example).
+
+   {
+      "date": "jue. ene. 13 20:37:42 2022",
+      "filename": "network.csv",
+      "groups": [
+      {
+         "active": true,
+         "function": "0,#99e41a1c;0.227068,#be0000ff;0.583459,#ffffff1a;1,#7a6a191a",
+         "gids": "0-40433,40436-40441",
+         "name": "uno",
+         "sizes": "0,20;1,10"
+      },
+      {
+         "active": false,
+         "function": "0,#99377eb8;1,#7a254158",
+         "gids": "48713-84557",
+         "name": "dos",
+         "sizes": "0,20;1,10"
+      },
+      {
+         "active": true,
+         "function": "0,#994daf4a;1,#7a2e552c",
+         "gids": "81801-124999",
+         "name": "tres",
+         "sizes": "0,20;1,10"
+      }
+     ]
+   }
 
