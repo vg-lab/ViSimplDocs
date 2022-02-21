@@ -181,9 +181,9 @@ Repeat the selection process this time selecting the ids from 0 to 2499, that wi
 
 In the '**Groups**' tab click the '**clear**' button. The groups list now should be empty. Change the tab to '**Selection**' to visualize the whole cube of particles. 
 
----------------
-Clipping planes
----------------
+-------------------------
+Selection Clipping planes
+-------------------------
 
 In the selection widget click the '**Clipping**' checkbox. Two while planes will appear on the limits of the cube of particles (:numref:`fig11`). 
 

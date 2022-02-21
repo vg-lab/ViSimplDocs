@@ -39,36 +39,19 @@ Options
 - **Toggle Playback Dock**: This will show or hide the playback dock.
 - **Auto naming selections**: If this option is enabled a default name will be assigned to each selection. 
 - **Fill plots**: If this option is enabled the plots will be filled with the color assigned to it. If not only the points of the graph will be shown with the color assigned.
+- **Add ZeroEQ selections as histograms**: Enable this option to visualize ZeroEQ received ids as histograms.
 
-^^^^^^^^^^^
-Scale panel
-^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+Configuration panels
+^^^^^^^^^^^^^^^^^^^^
 
-The scale panel provides scale and visualization options for the graphs. The normalization of each group can be selected between **linear** and **logarithmic** display. Both the vertical and horizontal scale of the graphs can be specified in this panel. 
+Several panels located in the bottom-right area of StackViz allows the user to configure several visualization options:
 
-.. figure:: images/VSImage009.png
-   :alt: Scale panel
-   :align: center
-   :width: 296
-   :scale: 80%
-
-   Scale panel.
-
-^^^^^^^^^^
-Data panel
-^^^^^^^^^^
-
-The data panel shows the value of the currently selected time point and the maximum value for the local and global areas. 
-
-This panel allows the user to configure the number of stops in the "visualization time ruler" to N, providing a visualization of the timeline in N intervals. 
-
-.. figure:: images/VSImage010.png
-   :alt: Data panel
-   :align: center
-   :width: 262
-   :scale: 80%
-
-   Data panel.
+- **Normalization**: Options to configure the histograms data normalization.
+- **Scale adjustment**: Options to configure the vertical and horizontal scale of the histograms.
+- **Bins configuration**: Options to set the number of groups of the values and its zoom factor.
+- **Data inspector**: Shows the value of the data currently being visualized and the local and global maximum values.
+- **Rule configuration**: Lets the user define the number of horizontal divisions of the histograms.
 
 ^^^^^^^^^^^^^^^^^^^^^^
 Histogram focus widget
@@ -98,9 +81,9 @@ The data manager widget shows the subsets and events. The upper widget shows the
 
    Data manager widget.
 
-------------------
-Keys and shortcuts
-------------------
+---------------------------
+StackViz Keys and shortcuts
+---------------------------
 
 The following actions can be performed by clicking the button, selecting the option at menu bar and pressing the corresponding key combination:
 

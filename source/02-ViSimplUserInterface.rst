@@ -11,16 +11,16 @@ The application bar presents several icons to perform actions such as opening da
 .. _figA:
 
 .. figure:: images/VSImage001.png
-   :alt: ViSimpl application toolbar
+   :alt: SimPart application toolbar
    :align: center
 
-   ViSimpl application tool bar. 
+   SimPart application tool bar. 
 
 For more information click on application menu "File" and "Options" to relate icons to specific commands.
 
-^^^^
-File
-^^^^
+^^^^^^^^^
+File menu
+^^^^^^^^^
 
 - **Open BlueConfig**: Load the circuit from the given BlueConfig file with the specified target.
 - **Open CSV**: Loads a dataset stored in a CSV file. 
@@ -28,9 +28,9 @@ File
 - **Open Subset/Events file**: Loads a subset or events file of the dataset currently in memory.
 - **Close dataset**: This option closes the current dataset in memory. This option is *currently disabled*. For loading a new dataset close the application and reopen. 
 
-^^^^^^^
-Options
-^^^^^^^
+^^^^^^^^^^^^
+Options menu
+^^^^^^^^^^^^
 
 - **Home**: Reset view perspective to original values of focus and camera distance. 
 - **Background Color**: Displays a dialog where background color of the visualization window can be selected. 
@@ -45,11 +45,33 @@ Options
 
    Simulation playback dock.
 
-- **Toggle Simulation Config Dock**: This button will show the simulation configuration dock when activated. 
+- **Toggle Simulation Config Dock**: This button will show the simulation configuration dock when activated.
+- **Toggle StackViz Dock**: This button will show the StackViz dock when activated.
 - **Show current simulation time**: This option shows or hides the current simulation time in the visualization window.
 - **Show events activity**: This option shows or hides the visualization of events in the visualization window. When an event ocurrs a label with the event color and name will be shown.
+- **Add ZeroEQ selections as visual groups**: By default the ids received by the ZeroEQ channel will be interpreted by SimPart as a tentative selection, if this option is checked then the received ids will be added automatically as a visual group.
 - **Update on idle**: This will reduce visualization repaint calls to user interaction (camera rotation, etc.) and specific actions. 
 - **Show FPS on idle update**: Displays a label with current frames per second rate. Note: this might reduce performance due to interface update calls, so it is recommended to hide it when not interested on measuring performance. 
+- **Recorder**: This button shows the recorder configuration dialog if the recorder is not running. If the recorder is running it will stop the recorder.
+- **Advanced recorder options**: This option will enable advanced configuration options in the recorder. 
+
+^^^^^^^^^^^^^
+StackViz menu
+^^^^^^^^^^^^^
+
+This menu contains options for the StackViz widget included in SimPart. It will only be enabled if the StackViz dock is visible.
+
+- **Auto Naming Selections**: The histograms created in StackViz will be named automatically if this option is enabled.
+- **Fill plots**: The histograms and focus widget in StackViz will be filled graphs if this options is enabled. If disabled only the histogram line will be shown.
+- **Show Data Manager**: Shows/hides the StacjViz data manager that shows information about the histograms.
+- **Focus on playhead**: If this button is clicked the StackViz focus widget will be centered in the part of the selected histogram that is currently being visualized. 
+- **Follow playhead**: If this option is enabled the StackViz focus widget will always be centered in the part of the selected histogram that is being visualized.
+
+^^^^^^^^^
+Help menu
+^^^^^^^^^
+
+- **About**: Shows the about dialog with information about SimPart application.
 
 ^^^^^^^^^^^^^^^^^^^^^^
 Playback control panel
@@ -190,9 +212,71 @@ Groups can be saved to disk with its properties (gids, active status and color t
 
    Groups saving and loading buttons.
 
-------------------
-Keys and shortcuts
-------------------
+^^^^^^^^
+Recorder
+^^^^^^^^
+
+The recording feature can be activated using the Options menu or by clicking the Recorder icon in the toolbar. The user will be presented with the recorder configuration dialog (:numref:`figG0`).
+
+.. _figG0:
+
+.. figure:: images/VSImage015.png
+   :alt: Recorder configuration dialog.
+   :align: center
+   :width: 802
+   :scale: 50%
+
+   Recorder configuration dialog.
+
+The recorder will generate a mp4 video if the media application **ffmpeg** is detected and available, if not the generated output will be individual frames. The **frames per second** of the output can be specified here. The user can choose explicilty which worker (video or frames) to use to generate the output in the advanced configuration dialog (:numref:`figG1`) (enabled using the **Advanced recorder options checkbox** in the Options menu).
+
+.. _figG1:
+
+.. figure:: images/VSImage016.png
+   :alt: Recorder advanced configuration dialog.
+   :align: center
+   :width: 802
+   :scale: 50%
+
+   Recoder advanced configuration dialog.
+
+Using the **advanced configuration dialog** an area of the application can be selected for recording or an individual widget.
+
+If the output is a video the user can specify the location of the generated file using the **Select** button. If the output is a sequence of frames the user can specify the destination directory using the Select button in the dialog.
+
+The dimensions of the output are shown and can be modified with the scale options.
+
+While the recorder is working the associated toolbar button will remain down and the user must click it again to stop it. The recorder can also be stopped using the Recorder button in the Options menu or the keyboard shortcut **Ctrl + R**.   
+
+^^^^^^^^^^^^^
+StackViz dock
+^^^^^^^^^^^^^
+
+The StackViz dock widget (:numref:`figG2`) presents the same functionality available in the standalone application. All the visual groups will have its histogram shown in StackViz.
+
+.. _figG2:
+
+.. figure:: images/VSImage017.png
+   :alt: StackViz dock widget.
+   :align: center
+   :width: 597
+   :scale: 55%
+
+   StackViz dock widget.
+
+In the bottom-right corner of the widget are the configuration options:
+
+- **Normalization**: Options to normalize the values of the histograms.
+- **Scale adjustement**: Options to adjust the horizontal and vertical scale of the histograms. 
+- **Bin configuration**: Number of bins to group values and histogram zoom factor. 
+- **Data inspector**: Shows the value of the current visualization point.
+- **Rule configuration**: Lets the user set the number of divisions in the histogram timeline.
+
+Selecting one of the histograms will show its values in the histogram focus widget and send the ids of the selected group via ZeroEQ.
+
+--------------------------
+SimPart Keys and shortcuts
+--------------------------
 
 The following actions can be performed by clicking the button, selecting the option at menu bar and pressing the corresponding key combination:
 
@@ -201,3 +285,5 @@ The following actions can be performed by clicking the button, selecting the opt
 - **Ctrl + T**: Show/Hide "Simulation configuration" menu. 
 - **Ctrl + P**: Show/Hide "Playback control" menu. 
 - **Ctrl + Q**: Close application.
+- **Ctrl + R**: Toggle recorder.
+
