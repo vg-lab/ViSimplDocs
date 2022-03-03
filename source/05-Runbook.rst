@@ -3,19 +3,19 @@ Runbook
 =======
 
 .. note::
-   This runbook will test the main functionalities of both ViSimpl and StackViz and can be considered as a basic tutorial for both applications, but **not** as a complete and exhaustive tutorial of all the functionalities. 
+   This runbook will test the main functionalities of both SimPart and StackViz and can be considered as a basic tutorial for both applications, but **not** as a complete and exhaustive tutorial of all the functionalities. 
 
-After loading the test file the 3D view in ViSimpl will show the particles in a cube-like structure centered on the view (:numref:`fig1`).
+After loading the test file the 3D view in SimPart will show the particles in a cube-like structure centered on the view (:numref:`fig1`).
 
 .. _fig1:
 
 .. figure:: images/RBimage001.png
-   :alt: ViSimpl application starting with test data files. 
+   :alt: SimPart application starting with test data files. 
    :align: center
    :width: 1530
    :scale: 40%
 
-   ViSimpl application starting with test data files. 
+   SimPart application starting with test data files. 
    
 -------
 Playing   
@@ -250,15 +250,15 @@ Launch the 'StackViz' application and manually load the test dataset using the '
 
    StackViz with the test dataset loaded. 
 
-While StackViz starts desynchronized with ViSimpl using the play toolbar in the lower part of the application **should sync** it with ViSimpl and both application should run at the same time point (:numref:`fig15`).
+While StackViz starts desynchronized with SimPart using the play toolbar in the lower part of the application **should sync** it with SimPart and both application should run at the same time point (:numref:`fig15`).
 
 .. _fig15:
 
 .. figure:: images/RBimage017.png
-   :alt: ViSimpl and StackViz running in sync.
+   :alt: SimPart and StackViz running in sync.
    :align: center
    :width: 1528
    :scale: 30%
 
-   ViSimpl and StackViz running in sync.
+   SimPart and StackViz running in sync.
 
