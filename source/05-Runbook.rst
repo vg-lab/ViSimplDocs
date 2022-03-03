@@ -12,7 +12,7 @@ After loading the test file the 3D view in ViSimpl will show the particles in a 
 .. figure:: images/RBimage001.png
    :alt: ViSimpl application starting with test data files. 
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    ViSimpl application starting with test data files. 
@@ -28,7 +28,7 @@ Click on the '**repeat**' button to activate playing in a loop, then click on th
 .. figure:: images/RBimage002.png
    :alt: Particles change color when activated by a spike. 
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    Particles change color when activated by a spike. 
@@ -56,7 +56,7 @@ The 3D view should show the particles being activated with the red colour and ch
 .. figure:: images/RBimage004.png
    :alt: Main 3D view with the 'red-blue [multi-hue]' transfer function.
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    Main 3D view with the 'red-blue [multi-hue]' transfer function.
@@ -110,7 +110,7 @@ The activation of the cube planes one by one should be more noticeable due to th
 .. figure:: images/RBimage007.png
    :alt: Modified visual configuration with shorter decay value. 
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    Modified visual configuration with shorter decay value.
@@ -138,7 +138,7 @@ The 3D view will only show the selected group of particles (one of the middle pl
 .. figure:: images/RBimage009.png
    :alt: Selected particles.
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    Selected particles. 
@@ -174,7 +174,7 @@ Repeat the selection process this time selecting the ids from 0 to 2499, that wi
 .. figure:: images/RBimage012.png
    :alt: Selected groups visualization.
    :align: center
-   :width: 1850
+   :width: 1530
    :scale: 35%
 
    Selected groups visualization.
@@ -192,7 +192,7 @@ In the selection widget click the '**Clipping**' checkbox. Two while planes will
 .. figure:: images/RBimage013.png
    :alt: Clipping planes. 
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    Clipping planes. 
@@ -210,7 +210,7 @@ The view should show only the center of the cube with the particles between the 
 .. figure:: images/RBimage014.png
    :alt: Clipping planes selection.
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    Clipping planes selection.
@@ -223,7 +223,7 @@ Changing from the '**Selection**' tab to the '**Groups**' tab should show now a 
 .. figure:: images/RBimage015.png
    :alt: Group selected by clipping planes operation. 
    :align: center
-   :width: 1850
+   :width: 1530
    :scale: 35%
 
    Group selected by clipping planes operation.
@@ -245,7 +245,7 @@ Launch the 'StackViz' application and manually load the test dataset using the '
 .. figure:: images/RBimage016.png
    :alt: StackViz with the test dataset loaded. 
    :align: center
-   :width: 1296
+   :width: 1530
    :scale: 40%
 
    StackViz with the test dataset loaded. 
@@ -257,7 +257,7 @@ While StackViz starts desynchronized with ViSimpl using the play toolbar in the 
 .. figure:: images/RBimage017.png
    :alt: ViSimpl and StackViz running in sync.
    :align: center
-   :width: 1913
+   :width: 1528
    :scale: 30%
 
    ViSimpl and StackViz running in sync.

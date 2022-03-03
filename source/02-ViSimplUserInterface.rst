@@ -16,7 +16,7 @@ The application bar presents several icons to perform actions such as opening da
 
    SimPart application tool bar. 
 
-For more information click on application menu "File" and "Options" to relate icons to specific commands.
+For more information click on application menu "File", "Options" and "StackViz" to relate icons to specific commands.
 
 ^^^^^^^^^
 File menu
@@ -41,7 +41,8 @@ Options menu
 .. figure:: images/VSImage002.png
    :alt: Playback dock
    :align: center
-   :scale: 100%
+   :width: 1277
+   :scale: 75%
 
    Simulation playback dock.
 
@@ -63,9 +64,10 @@ This menu contains options for the StackViz widget included in SimPart. It will 
 
 - **Auto Naming Selections**: The histograms created in StackViz will be named automatically if this option is enabled.
 - **Fill plots**: The histograms and focus widget in StackViz will be filled graphs if this options is enabled. If disabled only the histogram line will be shown.
-- **Show Data Manager**: Shows/hides the StacjViz data manager that shows information about the histograms.
+- **Show Data Manager**: Shows/hides the StackViz data manager that shows information about the histograms.
 - **Focus on playhead**: If this button is clicked the StackViz focus widget will be centered in the part of the selected histogram that is currently being visualized. 
 - **Follow playhead**: If this option is enabled the StackViz focus widget will always be centered in the part of the selected histogram that is being visualized.
+- **Show StackViz Panels**: Shows/hides the StackViz configuration panels. Hiding the panels will make the focus widget larger.
 
 ^^^^^^^^^
 Help menu
@@ -269,7 +271,7 @@ In the bottom-right corner of the widget are the configuration options:
 - **Normalization**: Options to normalize the values of the histograms.
 - **Scale adjustement**: Options to adjust the horizontal and vertical scale of the histograms. 
 - **Bin configuration**: Number of bins to group values and histogram zoom factor. 
-- **Data inspector**: Shows the value of the current visualization point.
+- **Data inspector**: Shows the value of the current visualization point in the timeline.
 - **Rule configuration**: Lets the user set the number of divisions in the histogram timeline.
 
 Selecting one of the histograms will show its values in the histogram focus widget and send the ids of the selected group via ZeroEQ.

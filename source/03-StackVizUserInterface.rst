@@ -39,6 +39,7 @@ Options
 - **Toggle Playback Dock**: This will show or hide the playback dock.
 - **Auto naming selections**: If this option is enabled a default name will be assigned to each selection. 
 - **Fill plots**: If this option is enabled the plots will be filled with the color assigned to it. If not only the points of the graph will be shown with the color assigned.
+- **Show Configuration Panels**: Shows/Hides the configuration panels. Hiding the panels will make the focus widget wider. 
 - **Add ZeroEQ selections as histograms**: Enable this option to visualize ZeroEQ received ids as histograms.
 
 ^^^^^^^^^^^^^^^^^^^^
