@@ -126,7 +126,7 @@ In the '**Selection**' panel click the selection button (next to the 'add group'
 .. figure:: images/RBimage008.png
    :alt: Selection manager dialog. 
    :align: center
-   :width: 661
+   :width: 622
    :scale: 80%
 
    Selection manager dialog. 
