@@ -252,6 +252,10 @@ The dimensions of the output are shown and can be modified with the scale option
 
 While the recorder is working the associated toolbar button will remain down and the user must click it again to stop it. The recorder can also be stopped using the Recorder button in the Options menu or the keyboard shortcut **Ctrl + R**.   
 
+.. warning::
+    To record a video the system must have **ffmpeg** installed, preferably with Nvidia hardware acceleration. 
+    If ffmpeg is not available in the system only the **images** worker will be available in the recorder.
+
 ^^^^^^^^^^^^^
 StackViz dock
 ^^^^^^^^^^^^^
