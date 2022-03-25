@@ -2,6 +2,9 @@
 StackViz User Interface
 =======================
 
+.. note::
+   The information in this section refers to both StackViz as a standalone application and as the widget inside **SimPart**, but for simplicity the section will detail the functionalities of StackViz considered as an application. The functionalities are the same in case of the widget. 
+
 ----------------------------
 StackViz Application Toolbar
 ----------------------------
@@ -41,6 +44,15 @@ Options
 - **Fill plots**: If this option is enabled the plots will be filled with the color assigned to it. If not only the points of the graph will be shown with the color assigned.
 - **Show Configuration Panels**: Shows/Hides the configuration panels. Hiding the panels will make the focus widget wider. 
 - **Add ZeroEQ selections as histograms**: Enable this option to visualize ZeroEQ received ids as histograms.
+- **Recorder**: Shows the recoder configuration dialog or stops the recorder if already running.
+- **Advanced recorder options**: Enables or disables the recorder advanced configuration dialog. 
+
+^^^^^^^^
+Recorder
+^^^^^^^^
+
+The recorder dialog and operations work in the same way as described in the :ref:`SimPart Recorder section<recorder-reference-label>`.
+
 
 ^^^^^^^^^^^^^^^^^^^^
 Configuration panels
@@ -92,4 +104,4 @@ The following actions can be performed by clicking the button, selecting the opt
 - **Ctrl + P**: Show/Hide "Playback control" menu. 
 - **Ctrl + A**: Toggle enable/disable auto-naming sections.
 - **Ctrl + Q**: Close application.
-
+- **Ctrl + R**: Shows the recorder configuration dialog or stops the recorder if already running.
