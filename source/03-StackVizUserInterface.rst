@@ -19,40 +19,40 @@ The application bar presents several icons to perform actions such as opening da
 
 For more information click on application menu "File", "Playback" and "Options" to relate icons to specific commands.
 
-^^^^
-File
-^^^^
+^^^^^^^^^
+File Menu
+^^^^^^^^^
 
 - **Open BlueConfig**: Load the circuit from the given BlueConfig file with the specified target.
 - **Open CSV**: Loads a dataset stored in a CSV file. 
 - **Open HDF5 network and activity**: Loads a dataset in HDF5 format. The application will ask for the network file first and then for the activity file.
 - **Open Subset/Events file**: Loads a subset or events file of the dataset currently in memory.
 
-^^^^^^^^
-Playback
-^^^^^^^^
+^^^^^^^^^^^^^
+Playback Menu
+^^^^^^^^^^^^^
 
 - **Focus on playhead**: Sets the focus area on the current time point. 
 - **Follow playhead**: If this option is enabled the focus area will translate its position to the current time point as is being played. 
 
-^^^^^^^
-Options
-^^^^^^^
+^^^^^^^^^^^^
+Options Menu
+^^^^^^^^^^^^
 
 - **Toggle Playback Dock**: This will show or hide the playback dock.
 - **Auto naming selections**: If this option is enabled a default name will be assigned to each selection. 
 - **Fill plots**: If this option is enabled the plots will be filled with the color assigned to it. If not only the points of the graph will be shown with the color assigned.
 - **Show Configuration Panels**: Shows/Hides the configuration panels. Hiding the panels will make the focus widget wider. 
 - **Add ZeroEQ selections as histograms**: Enable this option to visualize ZeroEQ received ids as histograms.
+
+^^^^^^^^^^
+Tools Menu
+^^^^^^^^^^
+
 - **Recorder**: Shows the recoder configuration dialog or stops the recorder if already running.
 - **Advanced recorder options**: Enables or disables the recorder advanced configuration dialog. 
 
-^^^^^^^^
-Recorder
-^^^^^^^^
-
-The recorder dialog and operations work in the same way as described in the :ref:`SimPart Recorder section<recorder-reference-label>`.
-
+The recorder and its configuration dialog works in the same way as described in the :ref:`SimPart Recorder section<recorder-reference-label>`.
 
 ^^^^^^^^^^^^^^^^^^^^
 Configuration panels

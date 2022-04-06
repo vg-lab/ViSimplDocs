@@ -53,8 +53,6 @@ Options menu
 - **Add ZeroEQ selections as visual groups**: By default the ids received by the ZeroEQ channel will be interpreted by SimPart as a tentative selection, if this option is checked then the received ids will be added automatically as a visual group.
 - **Update on idle**: This will reduce visualization repaint calls to user interaction (camera rotation, etc.) and specific actions. 
 - **Show FPS on idle update**: Displays a label with current frames per second rate. Note: this might reduce performance due to interface update calls, so it is recommended to hide it when not interested on measuring performance. 
-- **Recorder**: This button shows the recorder configuration dialog if the recorder is not running. If the recorder is running it will stop the recorder.
-- **Advanced recorder options**: This option will enable advanced configuration options in the recorder. 
 
 ^^^^^^^^^^^^^
 StackViz menu
@@ -68,6 +66,15 @@ This menu contains options for the StackViz widget included in SimPart. It will 
 - **Focus on playhead**: If this button is clicked the StackViz focus widget will be centered in the part of the selected histogram that is currently being visualized. 
 - **Follow playhead**: If this option is enabled the StackViz focus widget will always be centered in the part of the selected histogram that is being visualized.
 - **Show StackViz Panels**: Shows/hides the StackViz configuration panels. Hiding the panels will make the focus widget larger.
+
+^^^^^^^^^^
+Tools menu
+^^^^^^^^^^
+
+This menu contains the recorder tools and its configuration options. 
+
+- **Recorder**: This button shows the recorder configuration dialog if the recorder is not running. If the recorder is running it will stop the recorder.
+- **Advanced recorder options**: This option will enable advanced configuration options in the recorder configuration dialog. 
 
 ^^^^^^^^^
 Help menu
@@ -186,8 +193,8 @@ When creating a selection the application will ask for a group name. The name ca
 .. figure:: images/VSImage013.png
    :alt: Selection groups list with default assigned colors for each of the three selected groups.
    :align: center
-   :width: 1850
-   :scale: 35%
+   :width: 1530
+   :scale: 40%
 
    Selection groups list with default assigned colors for each of the three selected groups.
    
@@ -252,7 +259,10 @@ If the output is a video the user can specify the location of the generated file
 
 The dimensions of the output are shown and can be modified with the scale options.
 
-While the recorder is working the associated toolbar button will remain down and the user must click it again to stop it. The recorder can also be stopped using the Recorder button in the Options menu or the keyboard shortcut **Ctrl + R**.   
+While the recorder is working the associated toolbar button will remain down and the icon will change every second with an image of a "Stop" button with REC letters written inside it. The user must click it again to stop the recording. The recorder can also be stopped using the **Recorder** button in the **Tools** menu or the keyboard shortcut **Ctrl + R**.
+
+.. note::
+   If the output is a video the filename of the output file will end with "_temporal" while recording. Once the recording has finished it will change to the selected output name in the configuration dialog. The application will warn if the user tries to exit the application while a recording is being made.
 
 .. warning::
    To record a video the system must have **ffmpeg** installed, preferably with Nvidia hardware acceleration. 

@@ -257,7 +257,7 @@ While StackViz starts desynchronized with SimPart using the play toolbar in the 
 .. figure:: images/RBimage017.png
    :alt: SimPart and StackViz running in sync.
    :align: center
-   :width: 1528
+   :width: 1527
    :scale: 30%
 
    SimPart and StackViz running in sync.
