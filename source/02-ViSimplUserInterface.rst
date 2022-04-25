@@ -35,7 +35,7 @@ Options menu
 ^^^^^^^^^^^^
 
 - **Home**: Reset view perspective to original values of focus and camera distance. 
-- **Add camera position**: Adds the current camera position to the list of positions with a name given by the user.i
+- **Add camera position**: Adds the current camera position to the list of positions with a name given by the user.
 
 .. _figAB:
 
