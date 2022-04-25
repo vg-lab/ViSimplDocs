@@ -26,6 +26,8 @@ File menu
 - **Open CSV**: Loads a dataset stored in a CSV file. 
 - **Open HDF5 network and activity**: Loads a dataset in HDF5 format. The application will ask for the network file first and then for the activity file.
 - **Open Subset/Events file**: Loads a subset or events file of the dataset currently in memory.
+- **Load camera positions**: Loads a JSON file with the description of camera positions. 
+- **Save camera positions**: Saves the currently stored camera positions to a JSON file. 
 - **Close dataset**: This option closes the current dataset in memory. This option is *currently disabled*. For loading a new dataset close the application and reopen. 
 
 ^^^^^^^^^^^^
@@ -33,6 +35,25 @@ Options menu
 ^^^^^^^^^^^^
 
 - **Home**: Reset view perspective to original values of focus and camera distance. 
+- **Add camera position**: Adds the current camera position to the list of positions with a name given by the user.i
+
+.. _figAB:
+
+.. figure:: images/VSImage018.png
+   :alt: Camera position name dialog.
+   :align: center
+   :width: 220
+   :scale: 100%
+
+   Camera position name dialog.
+
+- **Remove camera position**: Lets the user remove a camera position from the list of positions.
+- **Camera positions**: Lists the currently stored camera positions in a submenu. Clicking on a camera position will move the camera to the position.
+
+.. note::
+
+   Camera positions are independent of the data and the scale applied to the data coordinates.
+
 - **Background Color**: Displays a dialog where background color of the visualization window can be selected. 
 - **Toggle Playback Dock**: This will show or hide the playback dock.
 
@@ -113,7 +134,7 @@ The visualization control panel provides the controls for configuring the parame
  
    Visualization control panel.
    
-- **Scale factor**: This options changes the scale of the visualization window showing the dataset. 
+- **Scale factor**: This options scales the data coordinates by multiplying them with the specified factor. 
 - **Shader configuration**: This option changes the particle visualization. The options are **default** (alpha blending) and **solid**. 
 - **Decay function**: This is the duration of activation of entities. Decay will determine the time taken to transit color and size transfer functions (from left to right) for each entity from the activation time to a rest state. It has to be configured considering "Simulation timestep" size and "Timesteps per second". 
 - **Alpha blending function**: This option provides two transparency modes for representing the activity. **Normal mode** will compose transparency following the typical "Back to front" render in order to preserve coherent results in terms of position, depth and color, and should be used when user wants to perceive depth and unaltered colors. **Accumulative mode** will add up all the entities on the back of each pixel, mixing all the colors and eventually saturating to white when too much complexity is shown. This last mode can be used in order to perceive a global understanding of what is being activated independently of the depth.
