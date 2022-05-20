@@ -25,17 +25,29 @@ File menu
 - **Open BlueConfig**: Load the circuit from the given BlueConfig file with the specified target.
 - **Open CSV**: Loads a dataset stored in a CSV file. 
 - **Open HDF5 network and activity**: Loads a dataset in HDF5 format. The application will ask for the network file first and then for the activity file.
+- **Connect to REST server...**: Opens the REST connection dialog to connect and get data from a NEST source via Insite protocol (:numref:`figCB`).
+
+.. _figCB:
+
+.. figure:: images/VSImage019.png
+   :alt: REST connection dialog.
+   :align: center
+   :width: 442
+   :scale: 75%
+
+   REST connection dialog.
+
 - **Open Subset/Events file**: Loads a subset or events file of the dataset currently in memory.
 - **Load camera positions**: Loads a JSON file with the description of camera positions. 
 - **Save camera positions**: Saves the currently stored camera positions to a JSON file. 
-- **Close dataset**: This option closes the current dataset in memory. This option is *currently disabled*. For loading a new dataset close the application and reopen. 
+- **Close Dataset**: This option closes the current dataset in memory, resetting the application interface. 
 
 ^^^^^^^^^^^^
 Options menu
 ^^^^^^^^^^^^
 
 - **Home**: Reset view perspective to original values of focus and camera distance. 
-- **Add camera position**: Adds the current camera position to the list of positions with a name given by the user.
+- **Add camera position**: Adds the current camera position to the list of positions with a name given by the user (:numref:`figAB`).
 
 .. _figAB:
 
@@ -55,7 +67,7 @@ Options menu
    Camera positions are independent of the data and the scale applied to the data coordinates.
 
 - **Background Color**: Displays a dialog where background color of the visualization window can be selected. 
-- **Toggle Playback Dock**: This will show or hide the playback dock.
+- **Toggle Playback Dock**: This will show or hide the playback dock (:numref:`figAA`).
 
 .. _figAA:
 
@@ -74,6 +86,18 @@ Options menu
 - **Add ZeroEQ selections as visual groups**: By default the ids received by the ZeroEQ channel will be interpreted by SimPart as a tentative selection, if this option is checked then the received ids will be added automatically as a visual group.
 - **Update on idle**: This will reduce visualization repaint calls to user interaction (camera rotation, etc.) and specific actions. 
 - **Show FPS on idle update**: Displays a label with current frames per second rate. Note: this might reduce performance due to interface update calls, so it is recommended to hide it when not interested on measuring performance. 
+- **Configure REST connection...**: Shows the REST configuration dialog where the frequency of the requests and the spikes size (:numref:`figCA`).
+
+.. _figCA:
+
+.. figure:: images/VSImage020.png
+   :alt: REST connection configuration dialog.
+   :align: center
+   :width: 442
+   :scale: 75%
+
+   REST connection configuration dialog.
+
 
 ^^^^^^^^^^^^^
 StackViz menu

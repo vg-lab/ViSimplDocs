@@ -127,3 +127,41 @@ Each object in the "groups" defines a group and its properties. It has the follo
      ]
    }
 
+
+--------------------------
+JSON Camera positions file
+--------------------------
+
+The JSON camera positions file is the file that contains the list of camera positions. Its generated using the **Save camera positions** option in the file menu of SimPart and loaded using the **Load camera positions** option in the same menu.
+
+The JSON camera positions file contains a json object with following fields: 
+ - **positions**: list of camera positions json objects.
+
+Each position is a JSON object with the following fields:
+ - **name**: Position name.
+ - **position**: Camera coordinates.
+ - **radius**: Aperture radius (distance to focus point).
+ - **rotation**: Camera rotation matrix.
+
+.. code-block:: json
+   :caption: JSON format of the camera positions file (example).
+
+   {
+       "positions": [
+           {
+               "name": "home",
+               "position": "-25,-25,-25",
+               "radius": "2927.08",
+               "rotation": "1,0,0,0,1,0,0,0,1"
+           },
+           {
+               "name": "inside",
+               "position": "-25,-25,-25",
+               "radius": "788.348",
+               "rotation": "1,0,0,0,1,0,0,0,1"
+           }
+       ]
+   }
+
+
+

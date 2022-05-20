@@ -26,7 +26,20 @@ File Menu
 - **Open BlueConfig**: Load the circuit from the given BlueConfig file with the specified target.
 - **Open CSV**: Loads a dataset stored in a CSV file. 
 - **Open HDF5 network and activity**: Loads a dataset in HDF5 format. The application will ask for the network file first and then for the activity file.
+- **Connect to REST server...**: Opens the REST connection dialog to connect and get data from a NEST source via Insite protocol (:numref:`figBB`).
+
+.. _figBB:
+
+.. figure:: images/VSImage019.png
+   :alt: REST connection dialog.
+   :align: center
+   :width: 442
+   :scale: 75%
+
+   REST connection dialog.
+
 - **Open Subset/Events file**: Loads a subset or events file of the dataset currently in memory.
+- **Close Dataset**: This option closes the current dataset in memory, resetting the application interface.
 
 ^^^^^^^^^^^^^
 Playback Menu
@@ -44,6 +57,17 @@ Options Menu
 - **Fill plots**: If this option is enabled the plots will be filled with the color assigned to it. If not only the points of the graph will be shown with the color assigned.
 - **Show Configuration Panels**: Shows/Hides the configuration panels. Hiding the panels will make the focus widget wider. 
 - **Add ZeroEQ selections as histograms**: Enable this option to visualize ZeroEQ received ids as histograms.
+- **Configure REST connection...**: Shows the REST configuration dialog where the frequency of the requests and the spikes size (:numref:`figBA`).
+
+.. _figBA:
+
+.. figure:: images/VSImage020.png
+   :alt: REST connection configuration dialog.
+   :align: center
+   :width: 442
+   :scale: 75%
+
+   REST connection configuration dialog.
 
 ^^^^^^^^^^
 Tools Menu

@@ -24,7 +24,7 @@ author = 'Sergio E. Galindo & Félix de las Pozas Álvarez'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '1.6.1'
+release = '1.7.0'
 
 # -- General configuration ---------------------------------------------------
 
@@ -88,9 +88,9 @@ latex_maketitle = r'''
 \begin{center}
   \includegraphics[width=6cm,height=6cm]{visimpl-icon-square.png}\\[8ex]
   {\Huge SimPart \& StackViz Documentation}\\[4ex]
-  {\Large Version 1.6.1}\\[4ex]
+  {\Large Version 1.7.0}\\[4ex]
   {\Large Sergio E. Galindo \& F\'{e}lix de las Pozas \'{A}lvarez}\\[4ex]
-  {\Large March 2022}\\[16ex]
+  {\Large May 2022}\\[16ex]
   {\Large Visualization \& Graphics Lab, Universidad Rey Juan Carlos}\\[4ex]
   \includegraphics[width=3cm,height=3cm]{logo.png}
 \end{center}
