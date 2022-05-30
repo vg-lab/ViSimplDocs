@@ -40,7 +40,17 @@ File menu
 - **Open Subset/Events file**: Loads a subset or events file of the dataset currently in memory.
 - **Load camera positions**: Loads a JSON file with the description of camera positions. 
 - **Save camera positions**: Saves the currently stored camera positions to a JSON file. 
-- **Close Dataset**: This option closes the current dataset in memory, resetting the application interface. 
+- **Close Dataset**: This option closes the current dataset in memory, resetting the application interface. If the current dataset is a REST connection then a close dataset dialog will be shown, letting the user choose between resetting the spikes data (and reloading again from the same connection) or fully closing the dataset (:numref:`figCAA`).
+
+.. _figCAA:
+
+.. figure:: images/VSImage021.png
+   :alt: Close dataset dialog when closing a REST dataset.
+   :align: center
+   :width: 437
+   :scale: 75%
+
+   Close dataset dialog when closing a REST dataset.
 
 ^^^^^^^^^^^^
 Options menu
