@@ -39,6 +39,7 @@ File Menu
    REST connection dialog.
 
 - **Open Subset/Events file**: Loads a subset or events file of the dataset currently in memory.
+- **Open Groups file**: Loads a groups file generated and :ref:`saved with SimPart<groups-reference-label>`.
 - **Close Dataset**: This option closes the current dataset in memory, resetting the application interface. If the current dataset is a REST connection then a close dataset dialog will be shown, letting the user choose between resetting the spikes data (and reloading again from the same connection) or fully closing the dataset (:numref:`figCA`).
 
 .. _figCA:
@@ -137,5 +138,6 @@ The following actions can be performed by clicking the button, selecting the opt
 - **Ctrl + Shift + B**: Open BlueConfig file. 
 - **Ctrl + P**: Show/Hide "Playback control" menu. 
 - **Ctrl + A**: Toggle enable/disable auto-naming sections.
+- **Ctrl + G**: Load Groups file generated with SimPart.
 - **Ctrl + Q**: Close application.
 - **Ctrl + R**: Shows the recorder configuration dialog or stops the recorder if already running.

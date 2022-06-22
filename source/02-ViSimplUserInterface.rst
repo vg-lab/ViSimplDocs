@@ -221,6 +221,8 @@ and pressing left and right mouse click respectively.
 
 The contained elements between both planes can stored as the current selection by clicking the button "To Selection". 
 
+.. _groups-reference-label:
+
 ^^^^^^^^^^^^^^^^^^^^
 Selection management
 ^^^^^^^^^^^^^^^^^^^^
@@ -264,7 +266,6 @@ In the "Export" tab there are several widgets to customize the file exporting of
    :scale: 55%
 
    Selection export dialog.
-
 
 Groups can be saved to disk with its properties (gids, active status and color transfer functions) using the **"Save"** button located in the **Groups** tab. Groups can be loaded from disk using the **"Load"** button (:numref:`figF2`).
 
