@@ -9,7 +9,7 @@ After decades of independent morphological and functional brain research, a key 
 
 In such context we present **ViSimpl**, which integrates a set of visualization and interaction tools that provide a semantic view of brain data with the aim of improving its analysis procedures. ViSimpl provides 3D particle--based rendering that allows visualizing simulation data with their associated spatial and temporal information, enhancing the knowledge extraction process. It also provides abstract representations of the time--varying magnitudes supporting different data aggregation and disaggregation operations and giving also focus and context clues. In addition, ViSimpl tools provide synchronized playback control of the simulation being analyzed. Finally, ViSimpl allows performing selection and filtering operations in association with NeuroScheme application. All these views are loosely coupled and can be used independently, but they can also work together, both in centralized and distributed computing environments, as linked views enhancing the data exploration and analysis procedures.
 
-This documentation is for ViSimpl version 1.8.3 that can be obtained from the homepage.
+This documentation is for ViSimpl version 1.8.6 that can be obtained from the homepage.
 
 ---------------------
 Hardware requirements
@@ -127,14 +127,14 @@ Executing both applications from docker:
 
   xhost +local:docker
   # Pull the image.
-  docker pull vglab/visimpl:1.8.3-nvidia-ubuntu-16.04
+  docker pull vglab/visimpl:1.8.6-nvidia-ubuntu-16.04
   # Download example data
   mkdir data
   cd data
   # Download a test dataset or move test files to data directory.
   cd ..
   # Run example
-  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl:1.8.3-nvidia-ubuntu-16.04 /usr/bin/visimpl.sh
+  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl:1.8.6-nvidia-ubuntu-16.04 /usr/bin/visimpl.sh
 
 To execute **SimPart** only the user must use the **/usr/bin/simpart.sh** call, and to execute **StackViz** follow the same steps but use **/usr/bin/stackviz.sh** in the docker call. All scripts supports the parameters specified in the previous table with the exception of **--testFile** parameter as is only available in SimPart.
 
@@ -146,9 +146,9 @@ To test the applications in a docker enviroment:
 
   xhost +local:docker
   # Pull the image.
-  docker pull vglab/visimpl:1.8.3-nvidia-ubuntu-16.04
+  docker pull vglab/visimpl:1.8.6-nvidia-ubuntu-16.04
   # Run bash inside docker
-  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl:1.8.3-nvidia-ubuntu-16.04 bash
+  docker run --gpus 1 -ti --rm -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /etc/machine-id:/etc/machine-id -v $(pwd)/data:/data --privileged vglab/visimpl:1.8.6-nvidia-ubuntu-16.04 bash
   # Executing inside the container
   simpart.sh --testFile &
   # With the test file generated and loaded in SimPart, execute StackViz with the dataset.
