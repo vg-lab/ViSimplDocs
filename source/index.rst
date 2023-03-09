@@ -15,4 +15,5 @@ Welcome to ViSimpl's documentation!
    03-StackVizUserInterface
    04-Formats
    05-Runbook
-   06-Acknowledgements
+   06-NestInsite
+   07-Acknowledgements
