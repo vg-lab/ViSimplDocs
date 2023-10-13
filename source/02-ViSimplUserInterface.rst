@@ -350,6 +350,18 @@ In the bottom-right corner of the widget are the configuration options:
 
 Selecting one of the histograms will show its values in the histogram focus widget and send the ids of the selected group via ZeroEQ.
 
+-------
+3D View
+-------
+
+The 3D view that shows the dataset can be manipulated using the mouse with some keyboard modifiers. The user can:
+
+- **Rotate the view** by holding down the left mouse button and dragging the mouse.
+- **Translate the view** by holding down the *Control* key and the left mouse button and dragging the mouse.
+- **Zoom the view**: Using the mouse wheel.
+
+The same movements apply to the clipping planes only if the user also holds down the *Shift* key.
+
 --------------------------
 SimPart Keys and shortcuts
 --------------------------
