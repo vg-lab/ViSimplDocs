@@ -185,9 +185,9 @@ The visualization control panel provides the controls for configuring the parame
 
 * **Selection**
 
-  * **Current selection**: Clicking the three dots button will open the group selection by id dialog. Once the group has been defined the user can create a group by clicking the *Add Group* or discard the selection using the *Discard* button.
+  * **Current selection**: Clicking the three dots button will open the group selection by id dialog. Once the group has been defined the user can create a group by clicking the *Add Group* or discard the selection using the *Discard* button. A more detailed description is available in the **Selection** section of this documentation.
 
-  * **Clipping planes**: Checking the checkbox will show the clipping planes in the 3d view. The position and characteristics of the clipping planes can be modified with the boxes in this section.
+  * **Clipping planes**: Checking the checkbox will show the clipping planes in the 3d view. The position and characteristics of the clipping planes can be modified with the boxes in this section. A more detailed description is available in the **Clipping planes** section of this documentation.
 
 * **Inspector**
 
