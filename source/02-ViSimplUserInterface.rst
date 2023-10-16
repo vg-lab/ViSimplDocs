@@ -153,25 +153,46 @@ Visualization control panel
 
 The visualization control panel provides the controls for configuring the parameters of the visualization process. Through these controls user can adjust (:numref:`figB`):
 
-- The color and size transfer function that will be used for representing the activity of each entity.
-- **Simulation timestep**: This is the step (in time units) that will be taken everytime the application plays. 
-- **Timesteps per second**: The number of timesteps (with the defined size) that will be taken on every second. 
-- **Step playback duration(s)**: This is the duration (in real time) used for the "Step by step" feature. For example: a duration of 5 will reproduce the next step (of the defined "Simulation timestep") interpolating intermediate steps along 5 seconds.
+* **Color And Size Transfer Function**
+
+  * The color and size transfer function that will be used for representing the activity of each entity. Clicking on the color widget will open the *Color Transfer Function* dialog for the group or general color transfer.
+
+* **Playback configuration**
+
+  * **Simulation timestep**: This is the step (in time units) that will be taken everytime the application plays. 
+  * **Timesteps per second**: The number of timesteps (with the defined size) that will be taken on every second. 
+  * **Step playback duration(s)**: This is the duration (in real time) used for the "Step by step" feature. For example: a duration of 5 will reproduce the next step (of the defined "Simulation timestep") interpolating intermediate steps along 5 seconds.
 
 .. _figB:
 
 .. figure:: images/VSImage003.png
-   :alt: Visualization control panel
+   :alt: All tabs of the Visualization control panel.
    :align: center
-   :width: 385
-   :scale: 60%
+   :width: 1600
+   :scale: 40%
  
-   Visualization control panel.
-   
-- **Scale factor**: This options scales the data coordinates by multiplying them with the specified factor. 
-- **Shader configuration**: This option changes the particle visualization. The options are **default** (alpha blending) and **solid**. 
-- **Decay function**: This is the duration of activation of entities. Decay will determine the time taken to transit color and size transfer functions (from left to right) for each entity from the activation time to a rest state. It has to be configured considering "Simulation timestep" size and "Timesteps per second". 
-- **Alpha blending function**: This option provides two transparency modes for representing the activity. **Normal mode** will compose transparency following the typical "Back to front" render in order to preserve coherent results in terms of position, depth and color, and should be used when user wants to perceive depth and unaltered colors. **Accumulative mode** will add up all the entities on the back of each pixel, mixing all the colors and eventually saturating to white when too much complexity is shown. This last mode can be used in order to perceive a global understanding of what is being activated independently of the depth.
+   All tabs in the Visualization control panel.
+
+* **Visual configuration**
+
+  * **Scale factor**: This options scales the data coordinates by multiplying them with the specified factor. 
+
+  * **Shader configuration**: This option changes the particle visualization. The options are **default** (alpha blending) and **solid**. 
+
+  * **Decay function**: This is the duration of activation of entities. Decay will determine the time taken to transit color and size transfer functions (from left to right) for each entity from the activation time to a rest state. It has to be configured considering "Simulation timestep" size and "Timesteps per second". 
+
+  * **Alpha blending function**: This option provides two transparency modes for representing the activity. **Normal mode** will compose transparency following the typical "Back to front" render in order to preserve coherent results in terms of position, depth and color, and should be used when user wants to perceive depth and unaltered colors. **Accumulative mode** will add up all the entities on the back of each pixel, mixing all the colors and eventually saturating to white when too much complexity is shown. This last mode can be used in order to perceive a global understanding of what is being activated independently of the depth.
+
+* **Selection**
+
+  * **Current selection**: Clicking the three dots button will open the group selection by id dialog. Once the group has been defined the user can create a group by clicking the *Add Group* or discard the selection using the *Discard* button.
+
+  * **Clipping planes**: Checking the checkbox will show the clipping planes in the 3d view. The position and characteristics of the clipping planes can be modified with the boxes in this section.
+
+* **Inspector**
+
+  * **Object inspector**: This section show information about the loaded dataset (network size and number of spikes) and selected ids (using ZeroEQ network selection).
+
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Transfer function configuration dialog
