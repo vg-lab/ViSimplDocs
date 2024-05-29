@@ -6,7 +6,7 @@ Runbook
    This runbook will test the main functionalities of both SimPart and StackViz and can be considered as a basic tutorial for both applications, but **not** as a complete and exhaustive tutorial of all the functionalities. 
 
 .. note::
-   Some screenshots may be from previous ViSimpl versions. The functionalities in the runbook cover up to version 1.8.10.
+   Some screenshots may be from previous ViSimpl versions. The functionalities in the runbook cover up to version 1.8.11.
 
 After loading the test file the 3D view in SimPart will show the particles in a cube-like structure centered on the view (:numref:`fig1`).
 
