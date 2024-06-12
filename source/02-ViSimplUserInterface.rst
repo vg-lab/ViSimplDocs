@@ -353,12 +353,14 @@ While the recorder is working the associated toolbar button will remain down and
 Take screenshot
 ^^^^^^^^^^^^^^^
 
-Using the **Take screenshot** action either from the menu or by using the toolbar icon will display the captured image in the resize dialog. The minimum size of width and height is one hundred pixels. The image will be resized to the selected resolution before showing a save dialog.
+Using the **Take screenshot** action either from the menu or by using the toolbar icon will display the captured image in the resize dialog (:numref:`figH0`). The minimum size of width and height is one hundred pixels. The image will be resized to the selected resolution before showing a save dialog.
+
+.. _figH0:
 
 .. figure:: images/VSImage22.png
    :alt: Resize image dialog.
    :align: center
-   :width:430
+   :width: 430
    :scale: 80%
 
    Resize image dialog.
