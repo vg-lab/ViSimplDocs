@@ -130,7 +130,11 @@ This menu contains the recorder tools and its configuration options.
 
 - **Recorder**: This button shows the recorder configuration dialog if the recorder is not running. If the recorder is running it will stop the recorder.
 - **Advanced recorder options**: This option will enable advanced configuration options in the recorder configuration dialog. 
+- **Take screenshot**: Takes a screenshot of the 3D view and shows a dialog to resize it before saving the image to disk.
 
+.. note::
+   The scaling is applied to the captured image, that is, the image is not rendered at the selected resolution. Because of that some details can be blurred. Its is recommended to make the 3D view as big as possible if a bigger image size is needed.
+   
 ^^^^^^^^^
 Help menu
 ^^^^^^^^^
@@ -344,6 +348,20 @@ While the recorder is working the associated toolbar button will remain down and
 .. warning::
    To record a video the system must have **ffmpeg** installed, preferably with Nvidia hardware acceleration. 
    If ffmpeg is not available in the system only the **images** worker will be available in the recorder.
+
+^^^^^^^^^^^^^^^
+Take screenshot
+^^^^^^^^^^^^^^^
+
+Using the **Take screenshot** action either from the menu or by using the toolbar icon will display the captured image in the resize dialog. The minimum size of width and height is one hundred pixels. The image will be resized to the selected resolution before showing a save dialog.
+
+.. figure:: images/VSImage22.png
+   :alt: Resize image dialog.
+   :align: center
+   :width:430
+   :scale: 80%
+
+   Resize image dialog.
 
 ^^^^^^^^^^^^^
 StackViz dock
